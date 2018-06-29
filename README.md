@@ -7,7 +7,7 @@ Terdapat dua `key` yang harus dikonfigurasi, yaitu `criteria` dan `predicate`.
 
 ### Contoh kasus:<br>
 #### Kriteria Penghasilan Orang Tua
-Bobot: 40%.
+Bobot: 20%.
 
 Penghasilan | Nilai
 ------------- | -------------
@@ -112,7 +112,7 @@ Lihat di index.php.
 <?php
 include_once 'Smart/Smart.php';
 
-// inisialisasi objek SMART
+// instansiasi objek SMART
 $smart = new Smart();
 
 // beri data yang akan dihitung
@@ -143,7 +143,7 @@ class ContohController extends CI_Controller
   
   public function index()
   {
-    // inisialisasi objek SMART
+    // instansiasi objek SMART
     $this->load->library("Smart/smart");
 
     // beri data yang akan dihitung
