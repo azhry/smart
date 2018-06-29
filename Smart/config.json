@@ -1,0 +1,107 @@
+{
+	"criteria": [
+		{
+			"label": "IPK",
+			"name": "ipk",
+			"weight": 40,
+			"type": "range",
+			"rules": [
+				{
+					"max": 4.00,
+					"min": 3.76,
+					"value": 100
+				},
+				{
+					"max": 3.75,
+					"min": 3.45,
+					"value": 80
+				},
+				{
+					"max": 3.44,
+					"min": 3.26,
+					"value": 60
+				},
+				{
+					"max": 3.25,
+					"min": 3.00,
+					"value": 40
+				}
+			]
+		},
+		{
+			"label": "Prestasi Non-akademik",
+			"name": "prestasi_non_akademik",
+			"weight": 30,
+			"type": "pair",
+			"rules": {
+				"Internasional": 100,
+				"Nasional": 50
+			}
+		},
+		{
+			"label": "Penghasilan Orang Tua",
+			"name": "penghasilan_orang_tua",
+			"weight": 20,
+			"type": "range",
+			"rules": [
+				{
+					"max": 1500000,
+					"value": 100
+				},
+				{
+					"max": 2000000,
+					"min": 1500001,
+					"value": 80
+				},
+				{
+					"max": 2500000,
+					"min": 2000001,
+					"value": 60
+				},
+				{
+					"min": 2500001,
+					"value": 40
+				}
+			]
+		},
+		{
+			"label": "Tanggungan Orang Tua",
+			"name": "tanggungan_orang_tua",
+			"weight": 10,
+			"type": "range",
+			"rules": [
+				{
+					"min": 4,
+					"value": 100
+				},
+				{
+					"max": 3,
+					"min": 3,
+					"value": 80
+				},
+				{
+					"max": 2,
+					"min": 2,
+					"value": 60
+				},
+				{
+					"max": 1,
+					"min": 1,
+					"value": 40
+				}
+			]
+		}
+	],
+	"predicates": [
+		{
+			"label": "Layak",
+			"max": 100,
+			"min": 80
+		},
+		{
+			"label": "Tidak Layak",
+			"max": 79,
+			"min": 0
+		}
+	]
+}
